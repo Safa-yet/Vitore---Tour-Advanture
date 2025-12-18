@@ -1,0 +1,156 @@
+@import "tailwindcss";
+/* Google Font Plugin */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
+
+
+/* ============
+  Root Element
+  ============== */
+
+  
+:root{
+     --container-max-width: 1320px; /* main container width */
+  --container-padding: 1rem; 
+}
+
+
+
+
+
+
+
+
+
+ @theme{
+
+    /* == Text Color == */
+    --color-primary:white;
+    --color-secondary:#4da528;
+    --color-shadow:#B4B4B4;
+    --color-smText:#4F545A;
+
+    /* Background Color */
+    --color-sky:#14b0c3;
+    --color-footer:#1d231f;
+    --color-org:#ff970d;
+    --color-black-50:#ebebeb;
+    /* Font Family */
+    --font-plus:"Plus Jakarta Sans", sans-serif;
+    --font-ital:  "Yesteryear", cursive;
+
+    /* Text size */
+    
+
+ };
+
+
+    
+/* Conatiner curtom */
+    
+@layer{
+  .container-main {
+    max-width: var(--container-max-width);
+   margin: 0 auto;
+  }
+}
+
+
+@layer component {
+    /* =========
+          Inner Head
+        ========= */
+
+    .inner-header{
+        @apply
+    bg-black-50  py-3 px-3.5 
+    }
+    
+    /* Inner list item */
+    .list-item{
+        @apply
+        flex items-center gap-2 
+       
+    }
+    .icon{
+      @apply
+      hover:text-secondary transition duration-200 text-lg font-semibold
+    }
+
+    .dropdown-link{
+      @apply
+       block py-2 hover:bg-black/10
+    }
+
+    /* arrow rotate for hover */
+    .arrow__rotate{
+      @apply
+      group-hover:rotate-180 transition duration-200
+    }
+
+}
+
+#src__inp.active {
+    display: block !important;
+}
+/* 
+.hero__sec{
+  background-image: url(/asset/img/slide1.jpg);
+ 
+  background-repeat: no-repeat;
+  background-size: ;
+
+  z-index: -1;
+ 
+} */
+
+.maskImg2{
+  animation: translate ease-in-out 5s infinite alternate;
+}
+@keyframes translate {
+  0%{
+    transform: translate(20px);
+  }
+ 
+  100%{
+    transform: translate(-20px);
+  }
+  
+}
+
+header{
+  z-index: 110 !important;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(179, 159, 159);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--color-secondary);
+}
+
+/* absBox Animatiuon */
+.absBox{
+  animation: rotate 5s ease-in-out infinite  alternate;
+}
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+
+  }
+  to{
+    transform: rotate(-30deg);
+  }
+  
+}
+
+.catagories__dropdown.active {
+    display: block !important;
+    width: 10rem ;
+    transition: all 4s ease-in-out ;
+}
