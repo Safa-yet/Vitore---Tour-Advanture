@@ -154,3 +154,9 @@ header{
     width: 10rem ;
     transition: all 4s ease-in-out ;
 }
+
+.sec3{
+  background-image: url(../asset/img/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

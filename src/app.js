@@ -28,14 +28,6 @@ srcBtn.addEventListener("click",()=>{
 
     // catagories Dropdopwn
 
-    // let dropBtn =document.querySelectorAll(".catagories__dropBtn");
-    // let dropdownList = document.querySelectorAll(".catagories__dropdown");
-
-
-    // dropBtn.addEventListener("click",()=>{
-    //   dropdownList.classList.toggle("active")
-    // })
-
 
     let dropBtns = document.querySelectorAll(".catagories__dropBtn");
 let dropdownLists = document.querySelectorAll(".catagories__dropdown");

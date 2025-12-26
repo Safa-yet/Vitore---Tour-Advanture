@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+ <!-- <link rel="stylesheet" href="output.css"> -->
+ <link href="src/output.css" rel="stylesheet">
+
     <!-- Favicon  -->
 
     <title>Sundarban - Tour & Advanture</title>
+
+    <link rel="shortcut icon" href="asset/img/favico.png" type="image/x-icon">
 
     <!-- Font Awsome Cdn -->
     <link
@@ -59,7 +63,7 @@
       >
         <li>
           <a href="#home"
-            ><img src="../asset/img/logo.png" width="128" alt="Logo"
+            ><img src="asset/img/logo.png" width="128" alt="Logo"
           /></a>
         </li>
         <!-- tooggle BTn -->
@@ -189,19 +193,19 @@
     <!-- HEro Section -->
     <section class="hero__sec md:h-screen relative flex items-center">
       <img
-        src="../asset/img/slide1.jpg"
+        src="asset/img/slide1.jpg"
         alt=""
         class="h-full w-full object-cover absolute -z-10"
       />
       <!-- iimg Mask one -->
       <img
-        src="../asset/img/mask-slide.png"
+        src="asset/img/mask-slide.png"
         alt="img"
         class="absolute top-0 -left-50 lg:left-0 h-full -z-10"
       />
       <!-- Righ masjk img -->
       <img
-        src="../asset/img/mask-fly.png"
+        src="asset/img/mask-fly.png"
         alt=""
         class="absolute -bottom-50 maskImg2 left-5"
       />
@@ -347,20 +351,75 @@
 
 
     <!-- Section 2 -->
-     <section>
-      <div class="container mx-auto">
-        <div class="flex gap-20 ">
-          <div class="flex items-center">
-            <img src="../asset/img/1.jpg" alt="" width="50px" class="rounded-full  border-2 text-white hover:cursor-pointer">
-          <img src="../asset/img/2.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
-          <img src="../asset/img/3.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
-          <img src="../asset/img/4.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
-          <img src="../asset/img/5.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
-          <img src="../asset/img/6.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
-          <img src="../asset/img/7.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
+     <section class="my-20">
+      <div class="container mx-auto px-5">
+        <div class="flex flex-col lg:gap-20 items-center lg:flex-row gap-5">
+          <div class="flex items-center ">
+            <img src="asset/img/1.jpg" alt="" width="50px" class="rounded-full  border-2 text-white hover:cursor-pointer">
+          <img src="asset/img/2.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
+          <img src="asset/img/3.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
+          <img src="asset/img/4.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
+          <img src="asset/img/5.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
+          <img src="asset/img/6.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
+          <img src="asset/img/7.jpg" alt="" width="50px" class="rounded-full  border-2 text-white -ms-3">
         </div>
-        <h1 class=" border-b border-black/30 text-xl">2,500 people booked Tommorow land Event in last 24 hours</h1>  
+        <h1 class=" border-b border-black/30 lg:text-xl">2,500 people booked Tommorow land Event in last 24 hours</h1>  
         </div>
+
+        <div class="grid row-auto lg:grid-cols-2 gap-5 mt-10 items-center">
+          <div class="video__img col-lg-6 relative">
+            <img src="asset/img/image-video.png" alt="img" class="w-full rounded-lg hover:cursor-pointer">
+          <!-- Relaticve imagas -->
+           <img src="asset/img/vali.png" alt="BrifCase" class="absolute bottom-0 -left-24 absBox">
+           <img src="asset/img/enjoy.png" alt="" class="absolute bottom-0 left-24">
+          </div>
+
+          <div class="col-lg-6 space-y-7">
+
+            <p class="text-secondary text-lg">Explore the world</p>
+            <h1 class="text-3xl lg:text-5xl font-semibold capitalize">Great opportunity for <span class="font-ital text-shadow"> adventure</span> & travels</h1>
+            <p class="text-smText ">Welcome to our Print 128 website! We are a professional and reliable printing company that offers a wide range of printing services to</p>
+            <!-- Hero box one -->
+            <div class="flex items-center gap-5 lg:gap-20 my-8 flex-col lg:flex-row">  
+              <div class="space-y-3.5">
+                <img src="asset/img/image (1).svg" alt="img" class="">
+                <h1 class="text-xl text-secondary">Trusted travel guide</h1>
+                <p class="text-smText">Welcome to our Print 128 wesit! company that offers a wide r</p>
+              </div>
+              <div class="space-y-3.5">
+                <img src="asset/img/image (2).svg" alt="img">
+                <h1 class="text-xl text-secondary">Pesonalized Trips</h1>
+                <p class="text-smText">Welcome to our Print 128 wesit! company that offers a wide r</p>
+              </div>
+
+            </div>
+            <div class="flex items-center gap-10">
+              <button class="text-xl uppercase bg-secondary font-semibold py-5 px-8 hover:bg-org cursor-pointer duration-300 rounded">More about us</button>
+              <div class="flex items-center gap-3">
+                 <img src="asset/img/1.jpg" alt="" width="50px" class="rounded-full  border-2 text-white hover:cursor-pointer shadow shadow-black">
+                <div> <img src="asset/img/name.png" alt="">
+                <p class="text-smText text-xs ">CEO & FOUNDER</p></div>
+              </div>
+
+            </div>
+            <div class="flex mt-10"><img src="asset/img/image (3).svg" alt="">
+            <p class="text-secondary text-lg font-plus ">Checkout Beautiful Places Arround the World.</p></div>
+            
+          </div>
+        </div>
+
+      </div>
+
+     </section>
+
+     <!--Catagori Section -->
+     <section class="sec3 h-screen ">
+      <div class="text-center space-y-5">
+        <h1 class="text-2xl text-secondary ">Explore the world</h1>
+        <p class="text-center text-5xl font-bold ">Amazing Featured Tour <br> <span class="font-ital text-smText"> Package</span> the world</p>
+      </div>
+      <div class="text-center flex justify-center gap-5 mt-10 list-none">
+        <li class="py-3 px-4 text-xl capitalize bg-secondary rounded list__icon relative hover:cursor-pointer">new york</li>
       </div>
 
      </section>
@@ -379,6 +438,6 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- JavaScript  -->
-    <script src="app.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
