@@ -160,3 +160,22 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+.list__icon::before{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #4DA528;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.list__icon:hover::before{
+  opacity: 1;
+}
